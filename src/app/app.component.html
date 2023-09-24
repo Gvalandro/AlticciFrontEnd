@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <input type="text" [(ngModel)]="value" />
+    <button type="button" (click)="onSubmit()">Go!</button>
+  </div>
+
+  <div class="nValue" *ngIf="nValue !== undefined">
+    N Value: {{ nValue }}
+  </div>
+
+  <ul class="sequence" *ngIf="sequence.length > 0">
+    <li *ngFor="let item of sequence">{{ item }}</li>
+  </ul>
+</div>
